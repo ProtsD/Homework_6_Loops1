@@ -1,3 +1,5 @@
+import java.time.Year;
+
 public class Main {
     public static void main(String[] args) {
         ///////////////////////////////////////// Exercise 1.1 /////////////////////////////////////////
@@ -87,8 +89,11 @@ public class Main {
         double interestRate = 12;
         System.out.println("Exercise 3.1");
         for (int i = 1; i <= 12; i++) {
-            total += savingsPerMonth + total*interestRate/100/12;
+            total += savingsPerMonth + total * interestRate / 100 / 12;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
+
+        int year = 1997;
+        System.out.println(Year.isLeap(year));
     }
 }
